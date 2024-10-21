@@ -1,6 +1,6 @@
 
 from django.urls import path 
-from inicio.views import inicio, crear_libro, buscar_libro, aboutme
+from inicio.views import inicio, crear_libro, buscar_libro, aboutme, ver_libro
 
 urlpatterns = [
     path('', inicio, name='inicio'),
@@ -8,6 +8,7 @@ urlpatterns = [
     path('buscar-libro/', buscar_libro, name='buscar_libro'),
     path('crear-libro/', crear_libro, name='crear_libro'),
     path('aboutme/', aboutme, name='about_me'),
+    path('ver-libro/', ver_libro, name='ver_libro')
 
 
     ]

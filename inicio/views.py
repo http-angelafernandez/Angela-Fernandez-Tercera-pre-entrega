@@ -52,3 +52,6 @@ def crear_libro(request):
            return redirect('buscar_libro')
     
     return render(request, 'crear_libro.html', {'form': formulario})
+
+def ver_libro(request):
+    return render(request, '')
