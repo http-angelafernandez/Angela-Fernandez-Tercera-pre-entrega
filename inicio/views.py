@@ -5,8 +5,12 @@ from inicio.models import Libro
 from inicio.forms import CrearLibroFormulario, BuscarLibroFormulario
 
 def inicio(request):
-    # return HttpResponse('<h1> Soy la pantalla de inicio </h1>')
+
     return render(request, 'index.html')
+
+def aboutme(request):
+
+    return render(request, 'aboutme.html')
     
 
 def buscar_libro(request):
